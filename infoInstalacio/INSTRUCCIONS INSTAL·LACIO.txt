@@ -1,0 +1,39 @@
+#########################
+INSTRUCCIONS INSTALACIO:#
+#########################
+
+
+NOTA: Programa corre correctament a Python 3.7.3 sota sistema operatiu windows
+
+
+0. Comprovar que tens PIL (python image library) - crec que està a la llibreria estandar-Ç
+
+1. 3.1. Actualitzar PIP--> https://stackoverflow.com/questions/15221473/how-do-i-update-upgrade-pip-itself-from-inside-my-virtual-environment
+
+2. Instal. de selenium fent:
+
+	pip install selenium
+
+
+
+3. Cal instalar chromedriver, descarregant-lo a la carpeta arrel del programa EL NIVEL SUPERIOR ON ESTA AQUEST FITXER, o simplement, ves a la carpeta d'Installers que hem posat al directori arrel del programa.
+	
+	https://chromedriver.storage.googleapis.com/index.html?path=97.0.4692.71/
+
+4. Instal·lar (inst.) llibreries reconeixement optic de caracters:
+
+	3.0  Inst. Tesseract OCR  [1r PAS!] 	--> https://github.com/UB-Mannheim/tesseract/wiki
+	3.1. Inst. pyteseract*			--> pip install pytesseract || https://pypi.org/project/pytesseract/
+
+
+5. Per evitar que una actualització de chrome no faci match amb chromedriver i doni error "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 97" CALDRA INSTALAR webdriver-manager (ja cridat convenientment a l'script quan faci falta):
+
+	pip install webdriver-manager
+
+Noteu que quan aixo passi caldra reinstalar chrome driver manualment per fer que el programa funcioni be i no hagi d'estar descarrengant constantment l'arxiu temporal de chromedriver.
+
+6. Cal instalar un servei per enviar notificacions a mòbil (en aquest cas, pushover):
+
+7. Executar!
+
+*Pytesseract es un wrapper per a tesseract OCR.	
