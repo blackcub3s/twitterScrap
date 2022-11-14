@@ -13,11 +13,11 @@ Twitter users with certain million followers create tendencies. For example, thi
 
 ## PROGRAMMING APPROACH
 
-Initially I thought it would be an easy task to make a twitter scrapper using only web scrapping technologies, such as selenium, beautifulsoup or urllib. But it was not. In the end I decided to take an inefficient approach, but useful in most cases[^1]: I used an OCR tool to extract the text of a cropped screenshot, which would contain Musk's latest twit. I did that using [PIL](https://pillow.readthedocs.io/en/stable/) (python image library) instead of getting it directly from the HTML source code. The first line of twit of that screenshot -discarding the line with the @username- was what in the program I call as ROI (Region of Interest) and is what I compare at each execution of the program. That cropped screenshot would serve to generate a .txt file where the information of that ROI at a given time, would be stored. When, after several minutes or seconds, the program was executed again (see segons pausa argument [^3]) it will compare the with the previous .txt file with the newer one. This is done, for example, within the `function comparaRoi(ROI1,ROI2)`
+Initially I thought it would be an easy task to make a twitter scrapper using only web scrapping technologies, such as selenium, beautifulsoup or urllib. But it was not. In the end I decided to take an inefficient approach, but useful in most cases[^1]: I used an OCR tool to extract the text of a cropped screenshot, which would contain Musk's latest twit. I did that using [PIL](https://pillow.readthedocs.io/en/stable/) (python image library) instead of getting it directly from the HTML source code. The first line of twit of that screenshot -discarding the line with the @username- was what in the program I call as ROI (Region of Interest) and is what I compare at each execution of the program. That cropped screenshot would serve to generate a .txt file where the information of that ROI at a given time, would be stored. When, after several minutes or seconds, the program was executed again (see segons pausa argument [^3], which is the time the program remains "waiting" for the next webscrap) it will compare the actual ROI stored in the last .txt with the previous ROI stored in the previous .txt file. This is done, for example, within the `function comparaRoi(ROI1,ROI2)` that I state here:
 
 https://github.com/blackcub3s/twitterScrap/blob/ea66dcd555a1d4a30d0d701abc3a5e2b288e094a/main__TwitterScrap.py#L193-L228
 
-The program would take a screenshot of the profile with a time period (in s) of * *segons pausa* * (it would just open a browser tag, take the screenshot and save the text of the first line of the twit [^2] In the code I uploaded * *segons pausa* * is 5s, but I happen to find a time interval of 2 or 3 minutes (120 or 180s) or even 15 minutes would be ok.
+
 
 ## NOTIFICATIONS SERVICE 
 
@@ -26,7 +26,5 @@ I used a notification service called [pushover](https://pushover.net/). With pus
 
 
 [^1]: The program works when a new twit, with text, is published by the user. It won't work if the user twits an image without text on top of it, without text, pins a twit on top of its profile or retweets or replies. In this case, we would have a false positive (the program would told us a new twit has been published where it hasn't). What is it important, though, the program has a very high sensitivity to changes of twits with texts.
-
-[^2]: Another feature that I would need to add in the future.
 
 [^3]: see the inicial function call of the program https://github.com/blackcub3s/twitterScrap/blob/ea66dcd555a1d4a30d0d701abc3a5e2b288e094a/main__TwitterScrap.py#L505-L508
