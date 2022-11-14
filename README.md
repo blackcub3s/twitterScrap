@@ -8,7 +8,7 @@ The utility of this script comes out as twitter users with several million follo
 
 Twitter users with certain million followers create tendencies. For example, this program was made with the purpose of targeting a certain twitter account: Elon Musk, with more than 70 million followers at the time of writing this lines. Due to markets sentiment, Elon Musk modifies stock prices and cryptocurrency prices just with a one line twit. The SEC watches him closely to make sure this does not happen with stocks, but Cryptocurrencies are unregulated in that regard. Therefore, knowing what he says around cryptocurrency before the rest of Twitter users know it is crucial for investment purposes. You can see there is a clear correlation between Musk twitting positively about Dogecoin and an inmediate fluctuation of the cryptocurrency price against the USD/EUR as he did in January 14 [(see twit and price fluctuation)](https://github.com/blackcub3s/twitterScrap/blob/main/infoInstalacio/PRECEDENTS/1aManipulacio.jpeg) and again at 25 January 2021; the latter twit brought about a 10% increase in the prices of the coin of a 10% in a 36 hour span [(see here)](https://github.com/blackcub3s/twitterScrap/blob/main/infoInstalacio/PRECEDENTS/2a%20manipulacio%20mercat%2025gen2021.png):
 
-![musk bull on Dogecoin via tesla](https://github.com/blackcub3s/twitterScrap/blob/main/infoInstalacio/PRECEDENTS/2a%20manipulacio%20mercat%2025gen2021.png)
+![musk bull on Dogecoin via tesla](https://github.com/blackcub3s/twitterScrap/blob/main/infoInstalacio/PRECEDENTS/2a%20manipulacio%20mercat.png)
 
 
 ## PROGRAMMING APPROACH
