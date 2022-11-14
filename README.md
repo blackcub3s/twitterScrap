@@ -29,4 +29,4 @@ I used a notification service called [pushover](https://pushover.net/). With pus
 
 [^2]: Another feature that I would need to add in the future.
 
-[^3]: see the inicial function call of the program https://github.com/blackcub3s/twitterScrap/blob/ea66dcd555a1d4a30d0d701abc3a5e2b288e094a/main__TwitterScrap.py#L505
+[^3]: see the inicial function call of the program https://github.com/blackcub3s/twitterScrap/blob/ea66dcd555a1d4a30d0d701abc3a5e2b288e094a/main__TwitterScrap.py#L505-L508
